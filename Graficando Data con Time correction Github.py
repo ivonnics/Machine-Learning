@@ -133,7 +133,7 @@ AverageSábadoTarde = dfSábadoTarde['Volume'].mean()
 dfSábadoNoche = df_new2.loc[(df_new2['Weekday']=='Saturday') & (df_new2['Hour']>=18) & (df_new2['Hour']<24), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageSábadoNoche = dfSábadoNoche['Volume'].mean()
 
-#SATURDAY:
+#SUNDAY:
 dfDomingoMadrugada = df_new2.loc[(df_new2['Weekday']=='Sunday') & (df_new2['Hour']>=0) & (df_new2['Hour']<6), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageDomingoMadrugada = dfDomingoMadrugada['Volume'].mean()
 
