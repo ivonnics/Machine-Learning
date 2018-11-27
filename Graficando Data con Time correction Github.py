@@ -55,7 +55,7 @@ df_new2['Domingo'] = np.where((df_new2['Weekday']=='Sunday'), 1, 0)
 
 df_new3=df_new2[['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo', 'Madrugada', 'Mañana', 'Tarde', 'Noche', 'Volume']]
 
-#MONDAY:
+#LUNES:
 dfLunesMadrugada = df_new2.loc[(df_new2['Weekday']=='Monday') & (df_new2['Hour']>=0) & (df_new2['Hour']<6), ['Date', 'Time', 'Volume','Weekday' ]]
 AverageLunesMadrugada = dfLunesMadrugada['Volume'].mean()
 
@@ -68,7 +68,7 @@ AverageLunesTarde = dfLunesTarde['Volume'].mean()
 dfLunesNoche = df_new2.loc[(df_new2['Weekday']=='Monday') & (df_new2['Hour']>=18) & (df_new2['Hour']<24), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageLunesNoche = dfLunesNoche['Volume'].mean()
 
-#TUESDAY:
+#MARTES:
 dfMartesMadrugada = df_new2.loc[(df_new2['Weekday']=='Tuesday') & (df_new2['Hour']>=0) & (df_new2['Hour']<6), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageMartesMadrugada = dfMartesMadrugada['Volume'].mean()
 
@@ -81,7 +81,7 @@ AverageMartesTarde = dfMartesTarde['Volume'].mean()
 dfMartesNoche = df_new2.loc[(df_new2['Weekday']=='Tuesday') & (df_new2['Hour']>=18) & (df_new2['Hour']<24), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageMartesNoche = dfMartesNoche['Volume'].mean()
 
-#WEDNESDAY:
+#MIERCOLES:
 dfMiércolesMadrugada = df_new2.loc[(df_new2['Weekday']=='Wednesday') & (df_new2['Hour']>=0) & (df_new2['Hour']<6), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageMiércolesMadrugada = dfMiércolesMadrugada['Volume'].mean()
 
@@ -94,7 +94,7 @@ AverageMiércolesTarde = dfMiércolesTarde['Volume'].mean()
 dfMiércolesNoche = df_new2.loc[(df_new2['Weekday']=='Wednesday') & (df_new2['Hour']>=18) & (df_new2['Hour']<24), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageMiércolesNoche = dfMiércolesNoche['Volume'].mean()
 
-#THURSDAY:
+#JUEVES:
 dfJuevesMadrugada = df_new2.loc[(df_new2['Weekday']=='Thursday') & (df_new2['Hour']>=0) & (df_new2['Hour']<6), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageJuevesMadrugada = dfJuevesMadrugada['Volume'].mean()
 
@@ -107,7 +107,7 @@ AverageJuevesTarde = dfJuevesTarde['Volume'].mean()
 dfJuevesNoche = df_new2.loc[(df_new2['Weekday']=='Thursday') & (df_new2['Hour']>=18) & (df_new2['Hour']<24), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageJuevesNoche = dfJuevesNoche['Volume'].mean()
 
-#FRIDAY:
+#VIERNES:
 dfViernesMadrugada = df_new2.loc[(df_new2['Weekday']=='Friday') & (df_new2['Hour']>=0) & (df_new2['Hour']<6), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageViernesMadrugada = dfViernesMadrugada['Volume'].mean()
 
@@ -120,7 +120,7 @@ AverageViernesTarde = dfViernesTarde['Volume'].mean()
 dfViernesNoche = df_new2.loc[(df_new2['Weekday']=='Friday') & (df_new2['Hour']>=18) & (df_new2['Hour']<24), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageViernesNoche = dfViernesNoche['Volume'].mean()
 
-#SATURDAY:
+#SABADO:
 dfSábadoMadrugada = df_new2.loc[(df_new2['Weekday']=='Saturday') & (df_new2['Hour']>=0) & (df_new2['Hour']<6), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageSábadoMadrugada = dfSábadoMadrugada['Volume'].mean()
 
@@ -133,7 +133,7 @@ AverageSábadoTarde = dfSábadoTarde['Volume'].mean()
 dfSábadoNoche = df_new2.loc[(df_new2['Weekday']=='Saturday') & (df_new2['Hour']>=18) & (df_new2['Hour']<24), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageSábadoNoche = dfSábadoNoche['Volume'].mean()
 
-#SUNDAY:
+#DOMINGO:
 dfDomingoMadrugada = df_new2.loc[(df_new2['Weekday']=='Sunday') & (df_new2['Hour']>=0) & (df_new2['Hour']<6), ['Date', 'Time', 'Volume', 'Weekday']]
 AverageDomingoMadrugada = dfDomingoMadrugada['Volume'].mean()
 
